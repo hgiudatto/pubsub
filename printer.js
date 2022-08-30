@@ -3,6 +3,8 @@
 const publisher = require("./publisher.js");
 
 class Printer {
+  // * Then the object to receive the notifications can be constructed
+
   constructor() {
     this.messages = [];
   }
@@ -22,7 +24,7 @@ module.exports = {
   init: () => {
     const printer = new Printer();
 
-    // ! Publisher
+    // * Publisher
     publisher.addListener((message) => {
       printer.addMessage(message);
     });

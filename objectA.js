@@ -3,6 +3,8 @@
 const publisher = require("./publisher");
 
 class ObjectA {
+  // * Finally, an object to create messages can be created that notifies the publisher
+
   sendMessage() {
     publisher.notify("Object A");
   }
